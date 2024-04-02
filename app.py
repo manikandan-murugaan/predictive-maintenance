@@ -2,7 +2,7 @@ import streamlit as st
 import pickle
 import numpy as np
 import pandas as pd
-model=pickle.load(open("/manikandan-murugaan/predictive-maintenance/blob/main/model.pkl",'rb'))
+model=pickle.load(open("model.pkl",'rb'))
 d={'M':1,"L":2,'H':3}
 def predict(new_data):
     predict=model.predict(new_data)
